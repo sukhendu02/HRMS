@@ -5,7 +5,7 @@ import Employee from '../models/EmployeeModal.js';
 
 
 const createEmployee = async (req, res) => {
-
+await connectDB();
     try{
 
     
