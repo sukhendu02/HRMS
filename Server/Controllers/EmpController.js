@@ -2,6 +2,7 @@ import express from 'express';
 const app = express();
 import generateEmpId from "../Utils/generateEmpId.js";
 import Employee from '../models/EmployeeModal.js';
+import connectDB from '../config/db.js';
 
 
 const createEmployee = async (req, res) => {
