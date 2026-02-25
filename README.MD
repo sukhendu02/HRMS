@@ -34,7 +34,7 @@ cd hrms-lite
 cd server
 npm install
 cp .env.example .env       # fill in your MONGO_URI and PORT
-npm run dev
+npm start
 ```
 
 ### 3. Setup the Client
@@ -50,7 +50,7 @@ npm run dev
 
 ```
 Frontend → http://localhost:5173
-Backend  → http://localhost:5000
+Backend  → http://localhost:3000
 ```
 
 ## Environment Variables
@@ -65,9 +65,9 @@ Backend  → http://localhost:5000
 
 ### Client (`client/.env`)
 
-| Variable        | Description                   |
-|-----------------|-------------------------------|
-| `VITE_API_URL`  | Base URL of the backend API   |
+| Variable             | Description                   |
+|----------------------|-------------------------------|
+| `VITE_API_BASE_URL`  | Base URL of the backend API   |
 
 ## Features
 
@@ -79,9 +79,10 @@ Backend  → http://localhost:5000
 
 - Single admin user — no authentication required
 - No leave management or payroll features
-- Pagination is UI-only (not yet wired to backend)
+
 
 ## Live Demo
 
-- Frontend: `<your-vercel-url>`
-- Backend API: `<your-render-url>`
+- Frontend: `https://hrms-seven-dusky.vercel.app`
+- Backend API: `https://hrms-7got.onrender.com/health`
+- Live Link : https://hrms-seven-dusky.vercel.app/
